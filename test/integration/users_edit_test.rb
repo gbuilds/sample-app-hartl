@@ -5,7 +5,7 @@ class UsersEditTest < ActionDispatch::IntegrationTest
     @user = users(:michael)
   end
   
-  test "unsucessful edit" do
+  test "unsuccessful edit" do
     log_in_as(@user)
     get edit_user_path(@user)
     assert_template 'users/edit'
